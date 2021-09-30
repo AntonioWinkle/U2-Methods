@@ -24,7 +24,7 @@ public class Quotes {
         buttonOne.addActionListener(new ButtonListenerOne());
         buttonTwo.addActionListener(new ButtonListenerTwo());
         buttonThree.addActionListener(new ButtonListenerThree());
-        
+
         window.add(panel);
         window.setVisible(true);
     }
