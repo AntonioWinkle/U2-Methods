@@ -65,7 +65,7 @@ static JLabel output;
             double number1 = Double.parseDouble(inputField1.getText());
             double number2 = Double.parseDouble(inputField2.getText());
 
-            output.setText(String.valueOf("Answer:" + number1+number2));
+            output.setText(String.valueOf(number1+number2));
         }
     }
 
@@ -83,7 +83,7 @@ static JLabel output;
             double number1 = Double.parseDouble(inputField1.getText());
             double number2 = Double.parseDouble(inputField2.getText());
 
-            output.setText(String.valueOf("Answer: "+number1*number2));
+            output.setText(String.valueOf(number1*number2));
         }
     }
 
@@ -92,7 +92,7 @@ static JLabel output;
             double number1 = Double.parseDouble(inputField1.getText());
             double number2 = Double.parseDouble(inputField2.getText());
 
-            output.setText(String.valueOf("Answer: "+number1/number2));
+            output.setText(String.valueOf(number1/number2));
         }
     }
 }
