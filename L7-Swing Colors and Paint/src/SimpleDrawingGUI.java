@@ -12,8 +12,9 @@ public class SimpleDrawingGUI {
         frame.setLocationRelativeTo(null);
 
         //ADD THE PANEL TO THE FRAME
+        JPanel panel = new DrawingPanel();
 
-
+        frame.add(panel);
         frame.setVisible(true);
     }
 
@@ -22,9 +23,22 @@ public class SimpleDrawingGUI {
         //Constructor for the class
         public DrawingPanel(){
             //set the Background color
-
+            setBackground(Color.blue);
         }
 
+        public void paintComponent(Graphics g){
+
+            super.paintComponent(g);
+
+            g.setColor(Color.RED);
+            g.fillRect(50,50,100,200);
+
+
+            g.setColor(Color.WHITE);
+            g.drawRect(50, 50, 100, 200);
+
+            g.drawLine(0,0,400,600);
+        }
 
     }
 }
